@@ -1,0 +1,121 @@
+/* General Styling */
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1100px;
+    font: 16px sans-serif;
+}
+
+.field_margin {
+    margin: 15px 0px;
+}
+
+.flex_display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background: #1d45d638;
+}
+
+/* Tab Selection styling */
+.tab_selection {
+    text-align: center;
+    margin: 30px;
+}
+
+.getJoke,
+.submitJoke {
+    border: 1px solid;
+    padding: 25px 10px;
+    width: 100%;
+}
+
+/* Search Fields styling */
+
+.search_section {
+    width: 40%;
+}
+
+.label_category,
+.label_filter {
+    padding: 0 20px 0 0;
+}
+
+.joke_form {
+    display: inline-block;
+}
+
+.joke_category {
+    height: 22px;
+}
+
+.joke-list.error {
+    color: red;
+    font-size: 20px;
+}
+
+.blacklisted_input {
+    margin: 0px ​5px 0 -15px;
+    position: static;
+}
+
+.filter_joke_keyword {
+    width: 94%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.search_button_submit {
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.blacklisted_block {
+    max-width: 33%;
+    width: 100%;
+}
+
+/* Result Container Styling */
+
+.jokes_container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.joke_block {
+    margin: 35px 0;
+    border: 1px solid;
+    padding: 0 10px;
+    border-radius: 20px;
+    font-family: cursive;
+    background: #8080803b;
+}
+
+.joke_category_title {
+    font-weight: 700;
+    text-align: right; 
+    font-size: 9px;
+}

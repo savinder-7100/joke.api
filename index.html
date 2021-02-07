@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jokes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <div id="renderJokesPage">
+        <div class="flex_display">
+            <div class="search_section">
+                <h1>Search a Joke!</h1>
+                <div class="category_block">
+                    <span class="label_category">Category: </span>
+                    <select class="joke_category" aria-label="Category">
+                        <option selected value="Any">Any Category Joke</option>
+                        <option>Misc</option>
+                        <option>Programming</option>
+                        <option>Dark</option>
+                        <option>Pun</option>
+                        <option>Spooky</option>
+                        <option>Christmas</option>
+                    </select>
+                </div>
+                <div class="filter_block field_margin">
+                    <input type="text" class="filter_joke_keyword form-control" placeholder="Filter Joke by Keywords (Optional)" value="">
+                </div>
+                <div class="flex_display blacklisted_input_list field_margin">
+                    <div class="blacklisted_block">
+                        <input class="blacklisted_input" type="checkbox" id="nsfw" name="nsfw" value="nsfw">
+                        <label for="nsfw">NSFW</label>
+                    </div>
+                    <div class="blacklisted_block">
+                        <input class="blacklisted_input" type="checkbox" id="religious" name="religious" value="religious">
+                        <label for="religious">Religious</label>
+                    </div>
+                    <div class="blacklisted_block">
+                        <input class="blacklisted_input" type="checkbox" id="political" name="political" value="political">
+                        <label for="political">Political</label>
+                    </div>
+                    <div class="blacklisted_block">
+                        <input class="blacklisted_input" type="checkbox" id="racist" name="racist" value="racist">
+                        <label for="racist">Racist</label>
+                    </div>
+                    <div class="blacklisted_block">
+                        <input class="blacklisted_input" type="checkbox" id="sexist" name="sexist" value="sexist">
+                        <label for="sexist">Sexist</label>
+                    </div>
+                    <div class="blacklisted_block">
+                        <input class="blacklisted_input" type="checkbox" id="explicit" name="explicit" value="explicit">
+                        <label for="explicit">Explicit</label>
+                    </div>
+                </div>
+                <button class="search_button_submit field_margin " type="submit">Submit</button>
+            </div>
+            <div class="jokes_container">
+                <div class="loader hidden">
+                    <img src="images/loader.gif" alt="loader_image">
+                </div>
+                <h1 class="joke_amount hidden">Number of jokes found: <span class="joke_number"></span></h1>
+                <div class="joke-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
