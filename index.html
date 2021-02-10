@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Jokes</title>
+    <title>Fun-tastic Club</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="container">
+    <div class="logo">
+        <span class="logo-text"><img src="images/logo-text.png" style="width: 150px;" alt="logo-text"></span>
+        <img src="images/logo.jpg" alt="logo" style="width: 50px;">
+    </div>
     <div id="renderJokesPage">
         <div class="flex_display">
             <div class="search_section">
@@ -28,6 +32,11 @@
                     <input type="text" class="filter_joke_keyword form-control" placeholder="Filter Joke by Keywords (Optional)" value="">
                 </div>
                 <div class="flex_display blacklisted_input_list field_margin">
+                    <div class="label-blacklist">Filter Jokes 
+                        <div class="tooltip">?
+                            <span class="tooltiptext">This will blacklist the jokes based on filter selected.</span>
+                        </div>
+                    </div>
                     <div class="blacklisted_block">
                         <input class="blacklisted_input" type="checkbox" id="nsfw" name="nsfw" value="nsfw">
                         <label for="nsfw">NSFW</label>
