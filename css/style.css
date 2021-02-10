@@ -27,6 +27,19 @@
     background: #1d45d638;
 }
 
+/* Logo Styling */
+
+.logo-text {
+    width: 180px;
+}
+
+.logo-emoji {
+    width: 50px;
+    position: relative;
+    top: 4px;
+    right: 55px;
+}
+
 /* Search Fields styling */
 
 .search_section {
